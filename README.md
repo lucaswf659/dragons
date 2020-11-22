@@ -17,7 +17,6 @@ login     | admin
 
 ### Tecnologias
 
-* Angular Material
 * Angular 8
 
 
