@@ -18,6 +18,7 @@ login     | admin
 ### Tecnologias
 
 * Angular 8
+* Sass
 
 
 ### Autoria
