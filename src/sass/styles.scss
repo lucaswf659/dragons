@@ -1,0 +1,76 @@
+@import './variables';
+@import './mixins';
+
+@include breakpoint-sm(){
+}
+
+@include breakpoint-md(){
+}
+
+@include breakpoint-lg(){
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body, a {
+    font-family: $primary-font;
+}
+
+form {
+    width: max-content;
+    margin: auto; 
+} 
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+div.body-content{
+    padding-bottom: 50px;
+}
+
+.grid-columns{
+    @include grid-columns;
+}
+
+.center{
+    @include center;
+}
+
+.primary-input {
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid $black;
+    width: 300px; 
+    padding: 5px 0;
+    &:focus{
+        outline-color: $primary-color;  
+    }
+}
+.primary-button {
+    margin-top: 5px;
+    justify-content: flex-end;
+    display: flex; 
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid $tertiary-color; 
+    background-color: $white;  
+    padding: 3px 10px;
+    &:active, &:hover {
+        box-shadow: 0 0 0 .2rem $secondary-color; 
+    }
+}
+
+.align-right { 
+    @include align-right; 
+}
+
+.align-text {
+    text-align: center;
+    @include top-space();
+}

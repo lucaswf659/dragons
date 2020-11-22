@@ -1,0 +1,23 @@
+<div class="grid-columns">
+    <div class="center">
+        <div class="align-text">Editar dados do Dragão</div>
+        <form [formGroup]="formEditarDragao">
+            <div>
+                <input class="primary-input" placeholder="Nome" formControlName="name">
+            </div>
+            <div>
+                <input class="primary-input" placeholder="Tipo" formControlName="type">
+            </div>
+            <div>
+                <input class="primary-input" type="date" placeholder="Data de criação" formControlName="createdAt">
+            </div>
+            <div class="align-right">
+                <button class="primary-button" [disabled]="!formEditarDragao.valid"
+                    (click)="editarDragao()">Editar</button>
+                <button class="primary-button" (click)="voltar()">
+                    <i class="fa fa-undo "></i> Voltar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

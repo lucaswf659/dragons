@@ -1,0 +1,21 @@
+<div class="grid-columns">
+    <div class="center login">
+        <div>Login</div>
+        <div>
+            <form (ngSubmit)="login()" [formGroup]="loginForm">
+                <div>
+                    <input class="primary-input" type="text" placeholder="Usuário" formControlName="username">
+                </div>
+                <div>
+                    <input class="primary-input" type="password" placeholder="Senha" formControlName="password">
+                </div>
+                <p *ngIf="error">
+                    {{error}}
+                </p>
+                <div class="align-right">
+                    <button class="primary-button" type="submit" [disabled]="!loginForm.valid">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

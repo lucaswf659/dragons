@@ -1,0 +1,29 @@
+<div class="grid-columns">
+    <div class="center">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Data de criação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let dragao of dragoes">
+                    <td>{{ dragao.name }}</td>
+                    <td>{{ dragao.type }}</td>
+                    <td>{{ dragao.createdAt  | date:'dd/MM/yyyy'}}</td>
+                    <td>
+                        <button class="primary-button" (click)="verDetalhes(dragao)">
+                            <i class="fa fa-edit"></i> Detalhe
+                        </button>
+                        <button class="primary-button" focusable="false" (click)="excluirDragao(dragao)">
+                            <i class="fa fa-trash"></i> Excluir
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

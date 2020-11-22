@@ -1,0 +1,38 @@
+@import './variables';
+
+@mixin breakpoint-sm {
+	@media (max-width : $mq-small) {
+		@content;
+	}
+}
+
+@mixin breakpoint-md {
+	@media only screen and (min-width: $mq-small) and (max-width: $mq-large) {
+		@content;
+	}
+}
+
+@mixin breakpoint-lg {
+	@media only screen and (min-width : $mq-large) {
+		@content;
+	}
+}
+
+@mixin grid-columns(){
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 800px) 1fr;
+}
+
+@mixin center(){
+    grid-column: 2 / 3;
+    width: 100%;
+}
+
+@mixin top-space(){
+	margin-top: 60px;
+}
+
+@mixin align-right(){
+	display:flex;
+	justify-content: flex-end;
+}

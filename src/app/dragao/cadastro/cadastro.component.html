@@ -1,0 +1,19 @@
+<div class="grid-columns">
+    <div class="center">
+        <div class="align-text">Cadastro de dragão</div>
+        <form (ngSubmit)="cadastrarDragao()" [formGroup]="cadastroForm">
+            <div>
+                <input class="primary-input" type="text" placeholder="Nome" formControlName="name">
+            </div>
+            <div>
+                <input class="primary-input" type="text" placeholder="Tipo" formControlName="type">
+            </div>
+            <div>
+                <input class="primary-input" type="date" placeholder="Data de criação" formControlName="createdAt">
+            </div>
+            <div class="align-right">
+                <button class="primary-button" type="submit" [disabled]="!cadastroForm.valid">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>

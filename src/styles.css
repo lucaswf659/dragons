@@ -1,0 +1,135 @@
+/* .main-container {
+    padding-top: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow:hidden;
+}
+
+header {
+  display: flex;
+  background-color:black;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  height: 50px;
+  text-align: center;
+} 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.banner-imagem {
+  padding-top: 40px;
+}
+
+.texto-home {
+  justify-content: center;
+}
+
+.dragoes-container {
+  height: 100%;
+}
+
+.dragoes-container{
+  width: 50%;
+}
+
+.th-acoes {
+  padding-left: 11% !important;
+  width: 30%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  width: 450px;
+}
+
+.login {
+  width: 100%;
+}
+
+.login-error {
+  padding: 16px;
+  width: 100%;
+  color: white;
+  background-color: red;
+}
+
+.editar-dragao{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detalhe-dragao {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.detalhe-dragao-card {
+  display: flex;
+  width: 500px;
+  height: 200px;
+}
+
+.detalhe-dragao-card{
+  justify-content: space-evenly;
+}
+
+.detalhe-dragao-card-imagem {
+  background-image: url('../src/assets/banguela.png');
+  background-size: cover;
+}
+
+.detalhe-dragao-card-imagem{
+  height: 100px;
+  width: 100px;
+}
+
+.detalhe-dragao-card button{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cadastro-dragao {
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.cadastro-dragao{
+  width: 450px;
+}
+
+.cadastro-dragao{
+  width: 100%;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+
+ */

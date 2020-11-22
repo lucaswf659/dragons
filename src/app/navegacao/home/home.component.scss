@@ -1,0 +1,11 @@
+@import '../../../sass/styles.scss';
+
+.title {
+    text-align: center;
+    font-size: 21px;
+    color: $black;
+}
+
+.title-column {
+    @include top-space(); 
+}

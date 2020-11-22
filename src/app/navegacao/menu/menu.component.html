@@ -1,0 +1,15 @@
+<nav class="grid-columns">
+  <div class="center">
+    <a routerLinkActive="Active" *ngIf="!liberado && !logado" [routerLink]="['/home']">
+      Home
+    </a>
+    <ul>
+      <li *ngIf="liberado || logado">
+        <a routerLinkActive="Active" [routerLink]="['/dragoes']">Dragões</a>
+      </li>
+      <li *ngIf="liberado || logado">
+        <a routerLinkActive="Active" [routerLink]="['/cadastrar']">Cadastrar</a>
+      </li>
+    </ul>
+  </div>
+</nav>

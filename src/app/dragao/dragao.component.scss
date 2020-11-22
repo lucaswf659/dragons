@@ -1,0 +1,42 @@
+@import '../../sass/styles.scss';
+
+table{
+    width: 100%;
+    @include top-space; 
+    thead {
+        width: 100%;
+        tr th{
+            padding-bottom: 5px;
+            
+            border-bottom: 1px solid $primary-color;
+            &:nth-child(1), &:nth-child(2){
+                text-align: left;
+            }
+            &:nth-child(3){
+                width: 200px;
+            } 
+            &:nth-child(4){
+                width: 130px;
+            }
+        }
+    }
+    
+    tbody {
+        tr {
+            td{
+                padding: 5px 0;
+                &:nth-child(3){
+                    text-align: center;
+                }
+                &:nth-child(4){
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .primary-button {
+                    margin: 0 2px; 
+                }
+            }
+        }
+    }
+}
+
