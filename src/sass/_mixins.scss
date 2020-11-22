@@ -7,13 +7,13 @@
 }
 
 @mixin breakpoint-md {
-	@media only screen and (min-width: $mq-small) and (max-width: $mq-large) {
+	@media (max-width: $mq-large) {
 		@content;
 	}
 }
 
 @mixin breakpoint-lg {
-	@media only screen and (min-width : $mq-large) {
+	@media (min-width : $mq-large) {
 		@content;
 	}
 }

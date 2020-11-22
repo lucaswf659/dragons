@@ -10,7 +10,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let dragao of dragoes">
+                <tr *ngFor="let dragao of dragoes | paginate: { itemsPerPage: 10, currentPage: p }">
                     <td>{{ dragao.name }}</td>
                     <td>{{ dragao.type }}</td>
                     <td>{{ dragao.createdAt  | date:'dd/MM/yyyy'}}</td>
@@ -23,7 +23,9 @@
                         </button>
                     </td>
                 </tr>
+
             </tbody>
         </table>
+        <pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>
     </div>
 </div>

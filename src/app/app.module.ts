@@ -5,7 +5,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
@@ -37,6 +37,7 @@ import { DragaoDetalheComponent } from './dragao/detalhe/dragao-detalhe/dragao-d
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
     [RouterModule.forRoot(rootRouterConfig, { useHash: false }),
       BrowserAnimationsModule]
   ],

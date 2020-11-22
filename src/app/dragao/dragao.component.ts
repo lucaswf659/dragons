@@ -1,9 +1,8 @@
-import { Component, OnInit, EventEmitter, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DragaoService } from './servicos/dragao.service';
 import { Dragao } from './modelos/dragao';
-import { Observable, of, combineLatest } from 'rxjs';
+import { Observable } from 'rxjs';
 import { FormControl } from '@angular/forms';
-
 import { Router } from '@angular/router';
 
 @Component({
@@ -18,6 +17,7 @@ export class DragaoComponent implements OnInit {
   filteredStates$: Observable<Dragao[]>
   filter: FormControl
   filter$: Observable<string>
+  p: number = 1;
 
   constructor(private dragaoService: DragaoService, private router: Router) {
     this.filter = new FormControl('')
