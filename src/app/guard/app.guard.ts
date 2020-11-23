@@ -9,7 +9,7 @@ export class AuthGuard implements CanActivate {
     }
 
     canActivate() {
-        if (sessionStorage.getItem('isLogged') === 'true') {
+        if (sessionStorage.getItem('isLogged')) {
             return true
         }
         else this.router.navigate(['/home'])

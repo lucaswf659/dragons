@@ -48,6 +48,18 @@ table{
     margin-right: auto;
 }
 
+.pagination ::ng-deep .ngx-pagination .pagination-previous{
+  span{
+      display: none;
+  }
+}
+
+.pagination ::ng-deep .ngx-pagination .pagination-next{
+    span{
+        display: none;
+    }
+}
+
 .pagination ::ng-deep .ngx-pagination .current {
     background: $primary-color; 
 }

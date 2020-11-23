@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MeuProjeto": {
+    "Dragoes": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/MeuProjeto",
+            "outputPath": "dist/Dragoes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,22 +68,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "MeuProjeto:build"
+            "browserTarget": "Dragoes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "MeuProjeto:build:production"
+              "browserTarget": "Dragoes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MeuProjeto:build"
+            "browserTarget": "Dragoes:build"
           }
         }
       }
     }
   },
-  "defaultProject": "MeuProjeto"
+  "defaultProject": "Dragoes"
 }

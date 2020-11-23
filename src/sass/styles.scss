@@ -1,15 +1,6 @@
 @import './variables';
 @import './mixins';
 
-@include breakpoint-sm(){
-}
-
-@include breakpoint-md(){
-}
-
-@include breakpoint-lg(){
-}
-
 html, body {
     margin: 0;
     padding: 0;
