@@ -1,23 +1,11 @@
 @import '../../../sass/styles.scss';
 
-@include breakpoint-sm(){
-    nav {
-        margin-left: 20px;
-    }
-}
-
-@include breakpoint-md(){
-}
-
-@include breakpoint-lg(){
-}
-
 nav {
     border-bottom: 1px solid $primary-color;
     div {
         margin: 15px 0;
         a {
-            margin-left: 0;
+            margin-left: 15px;
             color: $black;
             text-decoration: none;
             &:hover {
@@ -39,3 +27,11 @@ nav {
     }
 }
 
+@include breakpoint-md(){
+    nav div a{
+        margin-left: 0;
+    }
+}
+
+@include breakpoint-lg(){
+}

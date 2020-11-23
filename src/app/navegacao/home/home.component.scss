@@ -1,22 +1,23 @@
 @import '../../../sass/styles.scss';
 
-@include breakpoint-sm(){
-    .title {    
-        font-size: 21px;
-    }
-}
-
-@include breakpoint-md(){
-    .title {    
-        font-size: 18px;
-    }
-}
-
 .title {
     text-align: center;
+    font-size: 18px;
     color: $black;
 }
 
 .title-column {
     @include top-space(); 
+}
+
+@include breakpoint-md(){
+    .title {    
+        font-size: 21px;
+    }
+}
+
+@include breakpoint-lg(){
+    .title {    
+        font-size: 25px;
+    }
 }

@@ -1,13 +1,5 @@
 @import '../../sass/styles.scss';
 
-@include breakpoint-sm(){
-    table{
-        display: block;
-        overflow-x: scroll;
-    }
-}
-
-
 table{
     width: 100%;
     @include top-space; 
@@ -58,4 +50,12 @@ table{
 
 .pagination ::ng-deep .ngx-pagination .current {
     background: $primary-color; 
+}
+
+@include breakpoint-sm(){
+    table{
+        display: block;
+        overflow-x: scroll;
+        padding-left: 15px;
+    }
 }

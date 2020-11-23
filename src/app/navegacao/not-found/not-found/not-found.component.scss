@@ -1,0 +1,6 @@
+@import '../../../../sass/styles.scss';
+
+.center {
+    @include top-space; 
+    text-align: center; 
+} 

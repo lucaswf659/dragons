@@ -7,7 +7,7 @@
 }
 
 @mixin breakpoint-md {
-	@media (max-width: $mq-large) {
+	@media (min-width: $mq-medium) {
 		@content;
 	}
 }
