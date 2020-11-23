@@ -7,7 +7,7 @@ O login persiste até o fechamento da aba.
 ### Instalação
 
 * Executar npm install para instalar as dependências do projeto
-* Executar ng-serve ou npm-start para rodar o servidor da aplicação
+* Executar ng serve ou npm start para rodar o servidor da aplicação
 
 ### Dados para acesso
 
