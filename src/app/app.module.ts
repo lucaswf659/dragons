@@ -17,8 +17,8 @@ import { DragaoService } from './dragao/servicos/dragao.service';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './dragao/cadastro/cadastro.component';
 import { AuthGuard } from './guard/app.guard';
-import { NotFoundComponent } from './navegacao/not-found/not-found/not-found.component';
-import { DragaoDetalheComponent } from './dragao/detalhe/dragao-detalhe/dragao-detalhe.component';
+import { NotFoundComponent } from './navegacao/not-found/not-found.component';
+import { DragaoDetalheComponent } from './dragao/detalhe/dragao-detalhe.component';
 
 @NgModule({
   declarations: [
