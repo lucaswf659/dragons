@@ -20,6 +20,11 @@ login     | admin
 * Angular 8
 * Sass
 
+### Melhorias
+
+* Adicionar loader entre as páginas e entre ações que exigem alguma requisição da API
+* Adicionar toaster informativo para demonstrar ao usuário os retornos das respostas
+* Adicionar filtro dinâmico para pesquisar os dragões na lista
 
 ### Autoria
 
